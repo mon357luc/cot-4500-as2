@@ -1,4 +1,4 @@
-"docstrings are stupid"
+"assignment 2"
 
 import numpy as np
 np.set_printoptions(precision=7, suppress=True, linewidth=100)
@@ -86,6 +86,7 @@ def hermite_approx_matrix(raw):
     print(output)
 
 def cubic_spline(raw):
+    "performs cubic spline"
     output = np.zeros((raw.shape[0], raw.shape[0]))
     output[(0,0)] = 1
     output[(output.shape[0] - 1, output.shape[1] - 1)] = 1
